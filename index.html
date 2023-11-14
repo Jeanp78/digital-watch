@@ -7,71 +7,71 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="font" href="resources/DS-DIGIB.TTF">
-    <style>
-        @font-face {
-            font-family: "digital";
-            src: url("./resources/DS-DIGIB.TTF");
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        body {
-            background-color: rgb(15, 11, 29);
-            color: white;
-            font-family: "digital";
-        }
-    </style>
 </head>
 
 <body>
-    <div
-        style="width: 700px; border-radius: 10px; height: 250px; border: 30px solid; display: grid; grid-template-columns: repeat(8, 1fr); padding: 10px;">
-        <div style="grid-column: 1/2;">
-            <div style="text-align: end; padding-top: 30px; font-size: 2rem;">AM</div>
-        </div>
-        <div style=" grid-column: 2/7; display: grid; place-content: center;">
-            <h1 style="font-size: 13rem;">12:00</h1>
-        </div>
-        <div style=" grid-column: 7/9; display: grid; grid-template-rows: repeat(3, 1fr);">
-            <div style="border-bottom: 1px solid; margin-bottom: 5px;">
-                <div style="text-align: center;">SECONDS</div>
-                <div style="display: grid; place-content: center; height: calc(100% - 18px);">
-                    <div style="font-size: 3.5em;">
-                        26<span style="font-size: 0.5em;">s</span>
+    <main>
+        <header>
+            <h1>DIGITAL WATCH</h1>
+        </header>
+        <div class="watch">
+            <div class="first-column">
+                <div class="first-column-text">AM</div>
+            </div>
+            <div class="second-column">
+                <h1>
+                    <span id="hours">--</span>:<span id="minutes">--</span>
+                </h1>
+            </div>
+            <div class="third-column">
+                <div class="seconds-container">
+                    <div class="seconds-text">SECONDS</div>
+                    <div class="date">
+                        <div class="subtitle">
+                            <span id="seconds">--</span><span class="mini-text">s</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div style=" display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid; margin-bottom: 5px;">
+                <div class="month-container">
+                    <div>
+                        <div class="month-text">MONTH</div>
+                        <div id="month" class="month-value">
+                            --
+                        </div>
+                    </div>
+                    <div>
+                        <div class="date-text">DATE</div>
+                        <div id="date" class="date-value">
+                            --
+                        </div>
+                    </div>
+                </div>
                 <div>
-                    <div style="text-align: center;">MONTH</div>
-                    <div
-                        style="display: grid; place-content: center; height: calc(100% - 18px); font-size: 3.5em; border-right: 1px solid;">
-                        8
-                    </div>
-                </div>
-                <div>
-                    <div style=" text-align: center;">DATE</div>
-                    <div style="display: grid; place-content: center; height: calc(100% - 18px); font-size: 3.5em;">1
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div style="padding-left: 2rem;">TEMP</div>
-                <div style="display: grid; grid-template-columns: repeat(6, 1fr); height: calc(100% - 18px);">
-                    <div
-                        style="grid-column: 1/5;  display: grid; align-items: center; justify-content: end; font-size: 3.5em;">
-                        25
-                    </div>
-                    <div style="grid-column: 5/7; display: grid; grid-template-rows: 1fr 1fr;">
-                        <div style="display: grid; align-items: end;">ºC</div>
-                        <div style="display: grid; align-items: start;">.3</div>
+                    <div class="year-text">YEAR</div>
+                    <div class="year-content">
+                        <div id="year" class="year-value">
+                            ----
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="footer-links">
+        <p>Designed By <a class="user" href="https://github.com/Jeanp78">@JeanP78</a></p>
+        <ul class="links">
+            <li><a class="logo" target="_blank" rel="noreferrer" href="https://github.com/Jeanp78"><img
+                        src="resources/github.svg" width="30px" alt=""></a></li>
+            <li><a class="logo" target="_blank" rel="noreferrer" href="https://co.linkedin.com/in/jeanpaulduarte"><img
+                        src="resources/linkedin.svg" width="30px" alt=""></a></li>
+        </ul>
+    </footer>
+
+    <script src="js/script.js">
+
+    </script>
 </body>
 
 </html>
